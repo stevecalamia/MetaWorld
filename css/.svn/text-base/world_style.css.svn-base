@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+#world {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  cursor: pointer;
+}
+
+section.panels {
+  position: absolute;
+  z-index: 99999;
+  top: 25px;
+  right: 25px;
+  height: 95%;
+  width: 505px;
+  background: transparent;
+}
+
+section.panel {
+  background: #c3c3c3;
+  border: solid 1px #3c3c3c;
+  position: relative;
+  float: right;
+  overflow: hidden;
+  padding: 5px;
+  margin: 3.5px;
+}
+
+section.panel.wide {
+  width: 475px;
+  padding: 10px;
+}
+
+section.panel.thin {
+  width: 149px;
+}
+
+.panel .button {
+  color: #fff;
+}
+
+ul.controls {
+  list-style-type: none;
+  font-size: 24px;
+}
+
+.pause.button {
+  background-color: transparent;
+}
+
+div.panel-controls {
+  height: 1em;
+  position: absolute;
+  padding: 5px 0px;
+  top: 0px;
+  right: 10px;
+}
+
+div.panel-controls .control {
+  border-top: 1px solid #FFF;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #FFF;
+  float: left;
+  position: relative;
+  top: -5px;
+  right: -15px;
+  margin: 1px;
+  padding: 2px;
+  font-weight: bold;
+  width: .75em;
+  height: 1em;
+  font-family: sans-serif;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+#controls {
+}
+
+#logo {
+  z-index: 999999;
+  position: fixed;
+  bottom: -5%;
+  right: -5%;
+  -moz-transform: scale(.1);
+  -webkit-transform: scale(.1);
+}
+
+#introduction {
+}
+
+#introduction .firefox { display: none; }
+
+header.panel {
+  border-bottom: 1px solid #000;
+  margin: 0 0 5px  0;
+  padding: 0 0 5px 0;
+  position: relative;
+  bottom: 4px;
+}
+
+#introduction a img[alt="Download Firefox Here"] {
+  padding: 5px;
+}
+
+#introduction p { padding: 2px 0 5px 0; }
+
+.maintenance { z-index: 999999; font-size: 48px; color: #FFF; position: absolute; }

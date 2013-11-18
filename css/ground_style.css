@@ -1,0 +1,13 @@
+#ground {
+  position: absolute;
+}
+
+.day #ground.grass {
+  background-image: -moz-linear-gradient(100% 100% 90deg, #00441D 20%, #009B42 77%, #8DC63F 94%, #C4DF9B 99%);
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(55%, #005826), color-stop(90%, #8dc63f), color-stop(98%, #c4df9b));
+}
+
+.night #ground.grass {
+  background-image: -moz-linear-gradient(100% 100% 90deg, #00210E 20%, #1C623A 77%, #5F7A3B 94%, #6d775e 99%);
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(20%, #00210E), color-stop(77%, #1C623A), color-stop(94%, #5F7A3B), color-stop(99%, #6d775e));
+}

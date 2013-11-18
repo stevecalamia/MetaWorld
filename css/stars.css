@@ -1,0 +1,18 @@
+.star {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  z-index: 1;
+}
+
+.star.yellow {
+  background: #FFFFDD;
+}
+
+.star.red {
+  background: #FFdddd;
+}
+
+.star.blue {
+  background: #D4DdFF;
+}
