@@ -1,0 +1,634 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cloud",
+				"cloud_template"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 2445,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 2523,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "footer.php",
+			"settings":
+			{
+				"buffer_size": 421,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "library/meta.php",
+			"settings":
+			{
+				"buffer_size": 12427,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 7664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/clouds.js",
+			"settings":
+			{
+				"buffer_size": 3221,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/cloud_style.css",
+			"settings":
+			{
+				"buffer_size": 4259,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/sky.css",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "library/scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 2863,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 6022,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "comments.php",
+			"settings":
+			{
+				"buffer_size": 4667,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/SASS Build/SASS - Compressed.sublime-build",
+	"command_palette":
+	{
+		"height": 150.0,
+		"selected_items":
+		[
+			[
+				":q",
+				"Snippet: REQUEST['…']"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"Package Control: Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/metagrapher/Dropbox/Metagrapher LLC/Web/TingalayasRetreat/528beb1b413383309-2_20131119_tingalayasretreat_database.sql",
+		"/C/Users/metagrapher/GitHub/MetaWorld/comments.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/css/ie.css",
+		"/C/Users/metagrapher/GitHub/MetaWorld/archive.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/archive-custom_type.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/scss/login.scss",
+		"/C/Users/metagrapher/GitHub/MetaWorld/404.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/taxonomy-custom_cat.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/single.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/single-custom_type.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/search.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/page.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/page-custom.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/translation/translation.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/scss/_base.scss",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/less/_base.less",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/custom-post-type.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/css/style.css",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/admin.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/sidebar.php",
+		"/C/Users/metagrapher/Dropbox/Metagrapher LLC/Web/TingalayasRetreat/528beb1b413383309_20131119_tingalayasretreat_database.sql",
+		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/User/Sass.sublime-build",
+		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/SASS Build/SASS - Compressed.sublime-build",
+		"/C/Users/metagrapher/GitHub/MetaWorld/css/main.sass",
+		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/User/Sass.sublime-settings",
+		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/metagrapher/GitHub/MetaWorld/index.php",
+		"/C/Users/metagrapher/Dropbox/Site Folder/metaserver-backup/playground.metagrapher.com/trunk/js/clouds.js",
+		"/C/Users/metagrapher/Dropbox/Site Folder/metaserver-backup/playground.metagrapher.com/trunk/css/world_style.css",
+		"/C/Users/metagrapher/Dropbox/Site Folder/metaserver-backup/playground.metagrapher.com/trunk/css/cloud_style.css",
+		"/C/Users/metagrapher/Dropbox/Site Folder/metaserver-backup/playground.metagrapher.com/trunk/world.html",
+		"/C/Users/metagrapher/Dropbox/Metagrapher LLC/Web/Orange32/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\metagrapher\\GitHub\\MetaWorld"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/home/tingalay/public_html",
+			"bones_",
+			"bonestheme",
+			"www.tingalayasretreat.com",
+			"tingalayasretreat.com",
+			"DROP TABLE IF EXISTS `(\\w+)`",
+			"CREATE TABLE `(\\w+)`",
+			"CREATE TABLE `(\\w)+`"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"meta_",
+			"metagrapher",
+			"tingalayasretreat.metagrapher.com",
+			"DROP TABLE IF EXISTS `$1`;",
+			"DROP TABLE IF EXISTS $1",
+			"DROP TABLE IF EXISTS `$1` \\nCREATE TABLE `$1`",
+			"CREATE TABLE `wp_bookings`"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 11,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "header.php",
+					"settings":
+					{
+						"buffer_size": 2445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								721,
+								721
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 2523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "footer.php",
+					"settings":
+					{
+						"buffer_size": 421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "library/meta.php",
+					"settings":
+					{
+						"buffer_size": 12427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 7664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5896,
+								6190
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 546.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/clouds.js",
+					"settings":
+					{
+						"buffer_size": 3221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2720,
+								2720
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "css/cloud_style.css",
+					"settings":
+					{
+						"buffer_size": 4259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4058,
+								3990
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "css/sky.css",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "js/main.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "library/scss/style.scss",
+					"settings":
+					{
+						"buffer_size": 2863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								116,
+								116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 819.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 6022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								468,
+								468
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "comments.php",
+					"settings":
+					{
+						"buffer_size": 4667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1096,
+								1096
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 74.0
+	},
+	"replace":
+	{
+		"height": 233.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 205.0,
+	"status_bar_visible": true
+}

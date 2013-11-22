@@ -54,8 +54,8 @@
     $("div#cloud"+i).css({
       "z-index" : zindex, 
       "left" : sky.width()+"px",
-      "-moz-transform":"scale("+scale+") rotate3d(0,1,0,180deg)",
-      "-webkit-transform":"scale("+scale+") rotate3d(0,1,0,180deg)",
+      "-moz-transform":"scale("+scale+")",
+      "-webkit-transform":"scale("+scale+")",
       "bottom" : bottom+"px" });
       //"top" : top+"px" });
     if (init) {

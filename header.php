@@ -13,6 +13,9 @@
 
 		<title><?php wp_title(''); ?></title>
 
+		<meta name="description" content="Metagrapher's surreal gallery of Art">
+		<meta name="author" content="Metagrapher">
+
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
@@ -55,7 +58,7 @@
 
 
 					<nav role="navigation">
-						<?php bones_main_nav(); ?>
+						<?php meta_main_nav(); ?>
 					</nav>
 
 				</div>
