@@ -32,6 +32,15 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 @import "base";
 
 /*
+IMPORT WORLD
+These are the styles pertaining to the sky, clouds, metaball, etc..
+*/
+@import "sky";
+@import "cloud";
+@import "metaball";
+
+
+/*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them

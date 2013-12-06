@@ -197,6 +197,17 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
+/*******************
+BASIC INIT
+*******************/
+
+@mixin init {
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
 
 /*********************
 BUTTONS
@@ -248,3 +259,13 @@ BUTTONS
 		@include css-gradient( darken($bones-blue, 5%), $bones-blue );
 	}
 }
+
+
+
+
+
+$circle_size: 300px;
+$ballssize: 50%;
+$ballsize: 31.5%;
+$ballmargin: ((100-($ballsize*3))/2);
+$horizon: 66%;

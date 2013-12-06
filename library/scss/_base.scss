@@ -16,10 +16,29 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $serif;
-	font-size: 100%;
-	line-height: 1.5;
-	color: #565656;
+  font-family: $serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #565656;
+  background: rgba(10,8,28,1);
+  height: 100%;
+  width: 100%;
+}
+
+.stage {
+  position:absolute;
+  @include init;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 700px;
+  -webkit-perspective-origin: 50% 50%;
+  margin: 0 auto;
+  
+  background: -webkit-linear-gradient(
+    90deg,
+    #606379,
+    #244451 10%,
+    #000000 70%);
 }
 
 /********************

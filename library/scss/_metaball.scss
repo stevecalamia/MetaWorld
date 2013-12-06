@@ -1,0 +1,207 @@
+@-webkit-keyframes metaball {
+  0% {
+    -webkit-transform: translate3d(0%, 65%, 0px);
+  }
+  50% {
+    -webkit-transform: translate3d(0%, 70%, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(0%, 65%, 0px);
+  }
+}
+
+.meta {
+  position: relative;
+  @include init;
+  /*background: -webkit-radial-gradient(
+      2% -54%, circle cover,
+      #fcfcfc,
+      #efeff1 73%,
+      #3c3c3c 100%);*/
+  background: -webkit-radial-gradient(2% -54%, circle cover, #FCFCFC 22%, #efeff1 22%, #2c2c2c 73%);
+  height: $circle_size;
+  width: $circle_size;
+  border-radius: 50%;
+  margin: 0px auto;
+  -webkit-transform: translate3d(0%,65%,0px);
+  z-index: 100;
+  -webkit-animation: metaball 15s ease-in-out infinite;
+  
+  &:hover {
+    -webkit-animation-play-state: paused;
+  }
+  
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(
+      100% 100%, circle cover, 
+      rgba(127,127,127, 0.25), 
+      rgba(127,127,127, 0.2) 14%, 
+      rgba(127,127,127, 0) 54%
+    );
+    -webkit-filter: blur(5px);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 90%;
+    height: 95%;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(
+        0% 0%, circle cover, 
+        rgba(255, 255, 255, 0.5), 
+        rgba(255, 255, 255, 0.5) 14%, 
+        rgba(255, 255, 255, 0) 54%
+      );
+    -webkit-filter: blur(3px);
+  }
+  
+  .balls {
+    position: absolute;
+    @include init;
+    width: $ballssize;
+    height: $ballssize;
+    z-index: 200;
+    -webkit-transform-origin: 75px 150px;
+    -webkit-transform: 
+      translate3d(75px,0px,0)
+      rotate3d(0,0,1,45deg);
+
+    .row {
+      width: 100%;
+      height: $ballsize;
+      @include init;
+      margin-bottom: $ballmargin;
+      
+      &:last-child { margin: 0px; }
+    }
+    
+    @mixin ballbefore {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 99%;
+      height: 99%;
+      border-radius: 50%;
+    }
+    
+    .ball {
+      display: inline-block;
+      position: relative;
+      z-index: 110;
+      background: -webkit-linear-gradient(25deg, 
+        rgba(235,241,246,.5) 0%,
+        rgba(171,211,238,.5) 50%,
+        rgba(137,195,235,.5) 51%,
+        rgba(213,235,251,.5) 100%);
+      height: 100%;
+      width: $ballsize;
+      margin: 0px;
+      border-radius: 50%;   
+      
+      &:hover {
+        background: -webkit-linear-gradient(23deg, rgba(252,234,187,.25) 0%, rgba(252,205,77,.75) 50%, rgba(248,181,0,.5) 51%, rgba(251,223,147,.75) 100%);
+      }
+    
+      &:before {
+      @include ballbefore;
+      background: -webkit-radial-gradient(
+          52% 55%, circle cover, 
+          rgba(255, 255, 255, 0) 66%,  
+          rgba(0, 0, 0, 1) 69%);
+      }
+    }
+    
+    $circangle: 30;
+    
+    $r1rotate: -75deg;
+    $r1scale: .8;
+    .r1{
+      -webkit-transform: 
+        scale3d($r1scale,$r1scale,1)
+        translate3d(0px, -10px, 0px);
+      .ball:before {
+        @include ballbefore;
+        background: -webkit-radial-gradient(
+            52% 86%, circle cover, 
+            rgba(255, 255, 255, 0) 55%, 
+            black 63%);
+      }
+      .c1{
+        -webkit-transform: 
+          rotate3d(90, -$circangle, 0, $r1rotate);
+      }
+      .c2{
+        -webkit-transform: 
+          rotate3d(90, 0, 0, $r1rotate)
+          translate3d(0px,-35px,0px);
+      }
+      .c3{
+        -webkit-transform: 
+          rotate3d(90, $circangle, 0, $r1rotate);
+      }
+    }
+    
+    $r2scale: 1.05;
+    $r2rotate: -50deg;
+    .r2 {
+      -webkit-transform: 
+        scale3d($r2scale,$r2scale,1)
+        translate3d(0,-22px,0);
+      .ball:before {
+        @include ballbefore;
+        background: -webkit-radial-gradient(
+          55% 68%, circle cover, 
+          rgba(255, 255, 255, 0) 63%, 
+          black 70%)
+      }
+      .c1{
+        -webkit-transform: 
+          rotate3d(90, -$circangle, 0, $r2rotate);
+      }
+      .c2{
+        -webkit-transform: 
+          rotate3d(90, 0, 0, $r2rotate)
+          translate3d(0px,-10px,0px);
+      }
+      .c3{
+        -webkit-transform: 
+          rotate3d(90, $circangle, 0, $r2rotate);
+      }
+    }
+    
+    $r3scale: 1.2;
+    $r3rotate: -25deg;
+    .r3 {
+      -webkit-transform: 
+        scale3d($r3scale,$r3scale,1)
+        translate3d(0,-15px,0);
+      .c1{
+        -webkit-transform: 
+          rotate3d(45, -90, 0, $r3rotate)
+          translate3d(-4px, 0, 0);
+      }
+      .c2{
+        -webkit-transform: 
+          rotate3d(90, 0, 0, $r3rotate)
+          translate3d(0px,-5px,0px)
+          scale3d(1.2,1.2,1);
+      }
+      .c3{
+        -webkit-transform: 
+          rotate3d(45, 90, 0, $r3rotate)
+          translate3d(2px, 0, 0);
+      }
+    }
+  }
+}

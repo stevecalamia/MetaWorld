@@ -1,72 +1,177 @@
-<?php get_header(); ?>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
 
-			<div id="content">
+  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+  <!--[if IE]><![endif]-->
 
-				<div id="inner-content" class="wrap clearfix">
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+  <title>MetaWorld</title>
+  <meta name="description" content="">
+  <meta name="author" content="Steve Calamia">
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  <!--  Mobile Viewport Fix
+        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+  device-width : Occupy full width of the screen in its current orientation
+  initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+  -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
 
-								<header class="article-header">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+  <!-- Typekit embedded fonts, goes here since it pertains to styles -->
+  <script type="text/javascript" src="http://use.typekit.com/cki7nxo.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-									<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'metagrapher' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), meta_get_the_author_posts_link(), get_the_category_list(', '));
-									?></p>
 
-								</header>
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="css/worldstyle.css?v=1">
 
-								<section class="entry-content clearfix">
-									<?php the_content(); ?>
-								</section>
+  <!-- For the less-enabled mobile browsers like Opera Mini -->
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
+  
+  <!-- World Styles -->
+  <link rel="stylesheet" href="css/world_style.css" />
+  <link rel="stylesheet" href="css/cloud_style.css" />
+  <link rel="stylesheet" href="css/ground_style.css" />
+  <link rel="stylesheet" href="css/bldg.css" />
+  <link rel="stylesheet" href="css/stars.css" />
 
-								<footer class="article-footer">
-									<p class="tags"><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'metagrapher' ) . '</span> ', ', ', '' ); ?></p>
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/modernizr-1.5.min.js"></script>
+  
+  
+  <!-- GeoIP API, dependent functions are called in the HTML -->
+  <script type="text/javascript" src="http://j.maxmind.com/app/geoip.js"></script>
+  
+</head>
+<body>
+<div id="world" class="fall night">
+  <!-- nav>ul.nav.horizontal>li -->
+  
+  <!-- Panels -->
+  <section class="panels">
+    <section id="controls" class="panel controls thin">
+      <header id="controls-header" class="panel">
+        <div class="panel-controls">
+          <div class="control collapse"><a class="minmax button maximized" href="#" title="minimize">_</a></div>
+        </div>
+        <h2 id="controls-title" class="panel title">Controls</h2>
+      </header>
+      <ul id="controls-list" class="controls">
+        <li class="control pause button" title="Pause the movement of the clouds">PAUSE</li>
+        <li class="control regen button" title="Re-generate the clouds and stars">RE-GEN</li>
+        <li class="control day button" title="Let there be light!">DAY</li>
+        <li class="control night button" title="Hit the lights!">NIGHT</li>
+      </ul>
+    </section>
+    <section id="IPInfo" class="panel thin">
+      <header id="IPInfoHeader" class="panel">
+        <div class="panel-controls">
+          <div class="control collapse"><a class="minmax button maximized" href="#" title="minimize">_</a></div>
+          <div class="control close"><a class="close button" href="#" title="close">X</a></div>
+        </div>
+        <h2 class="panel title">GeoIP Info</h2>
+      </header>
+      <ul>
+        <li><script type="text/javascript">document.write(geoip_latitude());</script></li>
+        <li><script type="text/javascript">document.write(geoip_longitude());</script></li>
+      </ul>
+    </section>
+    <section id="sunrisesunset" class="panel thin">
+      <header id="sunrisesunset-header" class="panel">
+        <div class="panel-controls">
+          <div class="control collapse"><a class="minmax button maximized" href="#" title="minimize">_</a></div>
+          <div class="control close"><a class="close button" href="#" title="close">X</a></div>
+        </div>
+        <h2 id="sunrisesunset-title" class="panel title">Sunrise/Sunset</h2>
+      </header>
+      <p>coming soon...</p>
+    </section>
+    <section id="features" class="panel wide features">
+      <header class="panel" id="features-header">
+        <div class="panel-controls">
+          <div class="control collapse"><a class="minmax button maximized" href="#" title="minimize">_</a></div>
+          <div class="control close"><a class="close button" href="#" title="close">X</a></div>
+        </div>
+        <h2 class="panel title" id="features-title">Interactive Features</h2>
+      </header>
+      <ul>
+        <li>Click on the windows to make people stay late! This works in the day time, or you can call them back into work at night. Remember, you can't see the late night lights on during the day! ;)</li>
+        <li>Click the doors on the building, they open and close, you know, in case it gets a little stuffy in there.</li>
+      </ul>
+    </section>
+    <section id="comingsoon" class="panel wide comingsoon">
+      <header class="panel" id="comingsoon-header">
+        <div class="panel-controls">
+          <div class="control collapse"><a href="#" class="minmax button maximized" title="minimize">_</a></div>
+          <div class="control close"><a href="#" class="close button" title="close">X</a></div>
+        </div>
+        <h2 class="panel title" id="comingsoon-title">Features Coming Soon</h2>
+      </header>
+      <ul>
+        <li>Automatic Day/Night adjustment based on actual location and sunrise sunset times</li>
+        <li>More Buildings!! (dynamically generated..this is waiting on me figuring out the perspective algorithm.)</li>
+        <li>Improved styling. ;)</li>
+      </ul>
+    </section>
+  </section> <!-- End Panels -->
+  
+  <!--SKY-->
+  <div id="sky"></div>
+  
+  <!--GROUND-->
+  <div id="ground" class="grass"></div>
+  <object id="logo" data="assets/MetagrapherLogo.svg" type="image/svg+xml" height="360" width="360">  <img src="assets/MetagrapherLogo.png" height="48" width="48" alt="Metagrapher" /> </object> 
+</div>
 
-								</footer>
+  <!-- Javascript at the bottom for fast page loading -->
 
-								<?php // comments_template(); // uncomment if you want to use them ?>
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
 
-							</article>
 
-							<?php endwhile; ?>
+  <script src="js/plugins.js?v=1"></script>
+  <script src="js/script.js?v=1"></script>
 
-									<?php if ( function_exists( 'meta_page_navi' ) ) { ?>
-											<?php meta_page_navi(); ?>
-									<?php } else { ?>
-											<nav class="wp-prev-next">
-													<ul class="clearfix">
-														<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'metagrapher' )) ?></li>
-														<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'metagrapher' )) ?></li>
-													</ul>
-											</nav>
-									<?php } ?>
+  <!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js?v=1"></script>
+  <![endif]-->
 
-							<?php else : ?>
 
-									<article id="post-not-found" class="hentry clearfix">
-											<header class="article-header">
-												<h1><?php _e( 'Oops, Post Not Found!', 'metagrapher' ); ?></h1>
-										</header>
-											<section class="entry-content">
-												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'metagrapher' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the index.php template.', 'metagrapher' ); ?></p>
-										</footer>
-									</article>
+  <!-- yui profiler and profileviewer - remove for production -->
+  <script src="js/profiling/yahoo-profiling.min.js?v=1"></script>
+  <script src="js/profiling/config.js?v=1"></script>
+  <!-- end profiling code -->
 
-							<?php endif; ?>
+  <!-- My World Scripts -->
+  <script type="text/javascript" src="js/clouds.js"></script>
+  <script type="text/javascript" src="js/stars.js"></script>
+  <script type="text/javascript" src="js/bldgs.js"></script>
+  <script type="text/javascript" src="js/genesis.js"></script>
+  
 
-						</div>
-
-						<?php get_sidebar(); ?>
-
-				</div>
-
-			</div>
-
-<?php get_footer(); ?>
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+  <script>
+   var _gaq = [['_setAccount', 'UA-20809340-1'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+ </body>
+</html>

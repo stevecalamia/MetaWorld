@@ -1,0 +1,256 @@
+div.cloud {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  &.contents {
+    background-color: #fff;
+    position: relative;
+    border-radius: 55px 30px 0 0;
+    -moz-border-radius: 55px 30px 0 0;
+    -webkit-border-top-left-radius: 55px;
+    -webkit-border-top-right-radius: 30px;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-box-shadow: 7px 7px 11px #3C3C3C;
+    -webkit-box-shadow: 7px 7px 11px #3C3C3C;
+  }
+  
+  &.top {
+    height: 76px;
+    width: 65px;
+    -moz-box-shadow: 0 0 0 0;
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+  }
+
+  &.mid {
+    height: 50px;
+    width: 75px;
+  }
+
+  &.bottom {
+    height: 56px;
+    width: 100px;
+    -moz-border-radius: 55px 55px 25px 25px;
+    border-radius: 55px 55px 25px 25px;
+    -webkit-border-top-left-radius: 55px;
+    -webkit-border-top-right-radius: 55px;
+    -webkit-border-bottom-left-radius: 25px;
+    -webkit-border-bottom-right-radius: 25px;
+    -moz-box-shadow: 7px 7px 11px #3c3c3c;
+    -webkit-box-shadow: 7px 7px 11px #3c3c3c;
+    box-shadow: 7px 7px 11px #3c3c3c;
+  }
+
+  &.container {
+    background-color: transparent;
+    position: relative;
+
+    &.master {
+      height: 200px;
+      width: 400px;
+      position: absolute !important;
+      -webkit-transform: rotateX(180deg) rotateY(180deg);
+      opacity: .9;
+      // left: -2000px;
+    }
+    &.minor {
+      /* CLOUD FRONT */
+      &.front {
+        height: 75px;
+        width: 100px;
+        top: 25px;
+        left: 50px;
+
+        .top {
+          top: 8px;
+          left: 45px;
+        }
+        .bottom {
+          top: -47px;
+          left: 0px;
+        }
+      }
+
+      /* CLOUD MAIN */
+      &.main {
+        height: 100px;
+        width: 200px;
+        top: -75px;
+        left: 127px;
+
+        .top {
+          @extend div.cloud.top;
+          top: 3px;
+          left: 85px;
+          width: 75px;
+        }
+        .mid {
+          @extend div.cloud.mid;
+          left:35px;
+          top:-52px;
+          width:101px;
+          -moz-border-radius: 55px 45px 0 0;
+          border-radius: 45px 45px 0 0;
+          -webkit-border-top-left-radius: 45px;
+          -webkit-border-top-right-radius: 45px;
+          -webkit-border-bottom-left-radius: 0;
+          -webkit-border-bottom-right-radius: 0;
+        }
+        .bottom {
+          @extend div.cloud.bottom;
+          left: 8px;
+          top: -70px;
+          width: 174px;
+          z-index: 25;
+        }
+      }
+    }
+  }
+
+  &.body {
+    &.mid {
+      height: 38px;
+      width: 320px;
+      top: -95px;
+      left: 25px;
+      -moz-border-radius: 55px 55px 0 0;
+      border-radius: 49px 49px 0 0;
+      -webkit-border-top-left-radius: 49px;
+      -webkit-border-top-right-radius: 49px;
+      -webkit-border-bottom-left-radius: 0;
+      -webkit-border-bottom-right-radius: 0;
+      -moz-box-shadow: 0 0 0 0;
+      -webkit-box-shadow: 0 0 0 0;
+      box-shadow: 0 0 0 0;
+    }
+    &.bottom {
+      height: 49px;
+      width: 400px;
+      top: -117px;
+      left: 0px;
+      -moz-box-shadow: 0 0 0 0;
+      -webkit-box-shadow: 0 0 0 0;
+      box-shadow: 0 0 0 0;
+      z-index: 30;
+    }
+  }
+}
+
+.day div.cloud {
+  &.contents {
+    background: -moz-radial-gradient(35px 15px, white 35%, lightGrey) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(radial, 6% 31%, 43, 29% 11%, 195.5, from(white), to(lightGrey));
+  }
+  &.body.bottom {
+    background-image: -moz-linear-gradient(100% 100% 90deg, #3C3C3C, #C3C3C3 15%, #FFFFFF 40%);
+    background-image: 
+      -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(#C3C3C3)), 
+      -webkit-gradient(radial, 21% 43, 47, 20 20, 398.5, from(white), to(lightGrey));
+  }
+
+}
+
+.night div.cloud {
+  &.contents {
+    background: 
+      -moz-radial-gradient(35px 15px, darkGrey 35%, lightGrey) repeat scroll 0 0 transparent;
+    // background: -webkit-gradient(radial, 6% 31%, 43, 29% 11%, 195.5, from(white), to(lightGrey));
+    background:
+      -webkit-radial-gradient(35px 15px, darkGrey 35%, lightGrey) repeat scroll 0 0 transparent;
+  }
+  &.body.bottom {
+    background-image: -moz-linear-gradient(100% 100% 90deg, #C3C3C3, #777 15%, #3c3c3c 40%);
+    //background-image: 
+    //  -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(#C3C3C3)), 
+    //  -webkit-gradient(radial, 21% 43, 47, 20 20, 398.5, from(lightGrey), to(darkGrey));
+    background-image: -webkit-linear-gradient(100% 100% 90deg, #C3C3C3, #777 15%, #3c3c3c 40%);
+  }
+}
+
+@function abs($num) {
+  @if $num >= 0 {
+    @return $num;
+  }
+  @return $num * -1;
+}
+
+@function neg($num) {
+  @if $num <= 0 {
+    @return $num;
+  }
+  @return $num * -1;
+}
+
+@function fixlow($num) {
+  $rtn: $num;
+  @while abs($rtn) < 100 {
+    $rtn: $rtn*10;
+  }
+  @while abs($rtn) < 400 {
+    $rtn: $rtn*2;
+  }
+  @return $rtn;
+}
+
+@mixin cloud($cloud, $init_offset, $altitude, $distance) {
+  $d: fixlow($distance);
+  $a: neg($altitude);
+  #cloud#{$cloud} {
+    -webkit-transform: 
+      translate3d(
+        #{$init_offset}px,
+        #{$a}px,
+        #{$distance}px) 
+      rotateY(180deg);
+    z-index: $distance;
+    -webkit-animation-delay: random(30) + s;
+    -webkit-animation: cloud#{$cloud} #{abs($d - $init_offset)/10}s ease-out infinite;
+  }
+
+  @-webkit-keyframes cloud#{$cloud} {
+    from {
+      -webkit-transform: 
+        translate3d(#{neg($d*3)}px,#{$a}px,#{$distance}px) 
+        rotateY(180deg);
+    }
+    to {
+      -webkit-transform: 
+        translate3d(#{abs($d*6+$init_offset)}px, #{$a}px, #{$distance*2.5}px) 
+        rotateY(180deg);
+    }
+  }
+}
+
+// $cloud, $init_offset, $altitude, $distance
+@include cloud(1,0,500, 100);
+@include cloud(2,0,500,-200);
+@include cloud(3,0,500,-400);
+@include cloud(4,0,1000,-600);
+@include cloud(5,0,1000,-800);
+@include cloud(6,0,1000,-1000);
+@include cloud(7,0,1050,-1200);
+@include cloud(8,0,1200,-1400);
+@include cloud(9,0,1000,-40);
+@include cloud(10,0,1010,-140);
+@include cloud(11,0,1000,-850);
+@include cloud(12,0,1000,-2400);
+@include cloud(13,0,1000,-1900);
+@include cloud(14,0,1000,-1500);
+@include cloud(15,0,1000,-2200);
+@include cloud(16,500,1020,-1000);
+@include cloud(17,220,1020,-1200);
+@include cloud(18,120,1020,-1400);
+@include cloud(19,100,1020,-40);
+@include cloud(20,200,1000,-140);
+@include cloud(21,-400,420, 101);
+@include cloud(22,420,1200,-200);
+@include cloud(23,240,1020,-400);
+@include cloud(24,420,1040,-600);
+@include cloud(25,300,1000,-800);
+@include cloud(26,700,1040,-1000);
+@include cloud(27,600,800,-1200);
+@include cloud(28,650,1220,-1400);
+@include cloud(29,900,1120,-40);

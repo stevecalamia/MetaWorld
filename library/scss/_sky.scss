@@ -1,0 +1,30 @@
+.sky {
+  position: relative;
+  background-color: #2B81AF;
+  overflow: hidden;
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+  height: 729px;
+  //z-index: -999999;
+  -webkit-perspective: 333px;
+  -webkit-perspective-origin: 50% $horizon;
+}
+
+.day.sky { 
+  background-image: -moz-linear-gradient(100% 100% 90deg, #D5D7EF, #6DCFF6 10%, #2B81AF 70%);
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#D5D7EF), color-stop(10%, #6DCFF6), color-stop(70%, #2B81AF));
+}
+
+.night.sky {
+  background-color: #0A081C;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #606379, #244451 9%, #000000 70%);
+  background-image: 
+    -webkit-linear-gradient(
+      top, 
+      rgba(0,0,0,1) 10%,
+      rgba(36,68,81,1) 43%,
+      rgba(96,99,121,1) 74%,
+      rgba(21,39,71,1) $horizon,
+      rgba(10,8,28,1) 100%);
+}

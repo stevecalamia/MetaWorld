@@ -12,6 +12,14 @@
 	"buffers":
 	[
 		{
+			"file": "MetaWorld.html",
+			"settings":
+			{
+				"buffer_size": 20670,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "header.php",
 			"settings":
 			{
@@ -39,47 +47,7 @@
 			"file": "library/meta.php",
 			"settings":
 			{
-				"buffer_size": 12427,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 7664,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/clouds.js",
-			"settings":
-			{
-				"buffer_size": 3221,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/cloud_style.css",
-			"settings":
-			{
-				"buffer_size": 4259,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/sky.css",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/main.js",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 12484,
 				"line_ending": "Windows"
 			}
 		},
@@ -87,23 +55,88 @@
 			"file": "library/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 2863,
+				"buffer_size": 3004,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "functions.php",
+			"file": "library/scss/_sky.scss",
 			"settings":
 			{
-				"buffer_size": 6022,
+				"buffer_size": 818,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "comments.php",
+			"file": "library/scss/_metaball.scss",
 			"settings":
 			{
-				"buffer_size": 4667,
+				"buffer_size": 4783,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "library/scss/_cloud.scss",
+			"settings":
+			{
+				"buffer_size": 6570,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass",
+			"settings":
+			{
+				"buffer_size": 901,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/sass_extensions/functions/math.rb",
+			"settings":
+			{
+				"buffer_size": 2339,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<div id='cloud1' class='cloud cloud1 container master'> \n  <div id='cloud1-front-container' class='cloud cloud1 container minor front'> \n    <div id='cloud1-front-top' class='cloud cloud1 contents front top'>&nbsp;</div> \n    <div id='cloud1-front-bottom' class='cloud cloud1 contents front bottom'>&nbsp;</div>\n  </div> \n  <div id='cloud1-main-container' class='cloud cloud1 container minor main'>\n    <div id='cloud1-main-top' class='cloud cloud1 contents main top'>&nbsp;</div>\n    <div id='cloud1-main-mid' class='cloud cloud1 contents main mid'>&nbsp;</div>\n    <div id='cloud1-main-bottom' class='cloud cloud1 contents main bottom'>&nbsp;</div>\n  </div>\n  <div id='cloud1-body-mid' class='cloud cloud1 contents body mid'>&nbsp;</div>\n  <div id='cloud1-body-bottom' class='cloud cloud1 contents body bottom'>&nbsp;</div>\n</div>",
+			"settings":
+			{
+				"buffer_size": 832,
+				"line_ending": "Windows",
+				"name": "<div id='cloud1' class='cloud cloud1 container mas"
+			}
+		},
+		{
+			"file": "library/scss/_base.scss",
+			"settings":
+			{
+				"buffer_size": 14341,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "library/scss/_mixins.scss",
+			"settings":
+			{
+				"buffer_size": 6576,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "library/scss/config.rb",
+			"settings":
+			{
+				"buffer_size": 953,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "library/css/style.css",
+			"settings":
+			{
+				"buffer_size": 73401,
 				"line_ending": "Windows"
 			}
 		}
@@ -111,12 +144,12 @@
 	"build_system": "Packages/SASS Build/SASS - Compressed.sublime-build",
 	"command_palette":
 	{
-		"height": 150.0,
+		"height": 81.0,
 		"selected_items":
 		[
 			[
 				":q",
-				"Snippet: REQUEST['…']"
+				"Set Syntax: SQL"
 			],
 			[
 				":w",
@@ -152,8 +185,20 @@
 	},
 	"file_history":
 	[
-		"/C/Users/metagrapher/Dropbox/Metagrapher LLC/Web/TingalayasRetreat/528beb1b413383309-2_20131119_tingalayasretreat_database.sql",
+		"/C/Ruby200-x64/bin/compass.bat",
+		"/C/Ruby200-x64/bin/compass",
+		"/C/Ruby200-x64/bin/sass",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/meta.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/index.html",
+		"/C/Users/metagrapher/GitHub/MetaWorld/js/clouds.js",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/css/cloud.css",
 		"/C/Users/metagrapher/GitHub/MetaWorld/comments.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/functions.php",
+		"/C/Users/metagrapher/GitHub/MetaWorld/js/main.js",
+		"/C/Users/metagrapher/GitHub/MetaWorld/css/sky.css",
+		"/C/Users/metagrapher/GitHub/MetaWorld/library/scss/cloud.css",
+		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/metagrapher/Dropbox/Metagrapher LLC/Web/TingalayasRetreat/528beb1b413383309-2_20131119_tingalayasretreat_database.sql",
 		"/C/Users/metagrapher/GitHub/MetaWorld/library/css/ie.css",
 		"/C/Users/metagrapher/GitHub/MetaWorld/archive.php",
 		"/C/Users/metagrapher/GitHub/MetaWorld/archive-custom_type.php",
@@ -178,7 +223,6 @@
 		"/C/Users/metagrapher/GitHub/MetaWorld/css/main.sass",
 		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/User/Sass.sublime-settings",
 		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/metagrapher/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
 		"/C/Users/metagrapher/GitHub/MetaWorld/index.php",
@@ -205,6 +249,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ballafter",
+			"#3c3c3",
+			";",
+			"}",
+			" {",
+			"{ ",
+			"{",
 			"/home/tingalay/public_html",
 			"bones_",
 			"bonestheme",
@@ -217,9 +268,11 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"ballbefore",
+			" ",
 			"",
 			"meta_",
 			"metagrapher",
@@ -238,11 +291,39 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "MetaWorld.html",
+					"settings":
+					{
+						"buffer_size": 20670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20650,
+								20653
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 641.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
 					"file": "header.php",
 					"settings":
 					{
@@ -263,13 +344,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 156.0,
+						"translation.y": 78.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "index.php",
 					"settings":
 					{
@@ -296,7 +377,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "footer.php",
 					"settings":
 					{
@@ -323,19 +404,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "library/meta.php",
 					"settings":
 					{
-						"buffer_size": 12427,
+						"buffer_size": 12484,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								254,
+								254
 							]
 						],
 						"settings":
@@ -344,86 +425,63 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2886.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 7664,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5896,
-								6190
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 546.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 5,
-					"file": "js/clouds.js",
+					"file": "library/scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 3221,
+						"buffer_size": 3004,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2720,
-								2720
+								442,
+								442
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 390.0,
+						"translation.y": 78.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "css/cloud_style.css",
+					"file": "library/scss/_sky.scss",
 					"settings":
 					{
-						"buffer_size": 4259,
+						"buffer_size": 818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4058,
-								3990
+								225,
+								225
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -435,36 +493,66 @@
 				},
 				{
 					"buffer": 7,
-					"file": "css/sky.css",
+					"file": "library/scss/_metaball.scss",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 4783,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1919,
+								1919
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 507.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "js/main.js",
+					"file": "library/scss/_cloud.scss",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 6570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5129,
+								5129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass",
+					"settings":
+					{
+						"buffer_size": 901,
 						"regions":
 						{
 						},
@@ -477,7 +565,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -486,19 +576,75 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "library/scss/style.scss",
+					"buffer": 10,
+					"file": "/C/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/sass_extensions/functions/math.rb",
 					"settings":
 					{
-						"buffer_size": 2863,
+						"buffer_size": 2339,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								116,
-								116
+								1583,
+								1583
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"settings":
+					{
+						"buffer_size": 832,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								832,
+								832
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div id='cloud1' class='cloud cloud1 container mas",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "library/scss/_base.scss",
+					"settings":
+					{
+						"buffer_size": 14341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								624,
+								624
 							]
 						],
 						"settings":
@@ -507,31 +653,57 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 819.0,
+						"translation.y": 78.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "functions.php",
+					"buffer": 13,
+					"file": "library/scss/_mixins.scss",
 					"settings":
 					{
-						"buffer_size": 6022,
+						"buffer_size": 6576,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								468,
-								468
+								6466,
+								6466
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2915.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "library/scss/config.rb",
+					"settings":
+					{
+						"buffer_size": 953,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								953,
+								953
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -540,28 +712,29 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "comments.php",
+					"buffer": 15,
+					"file": "library/css/style.css",
 					"settings":
 					{
-						"buffer_size": 4667,
+						"buffer_size": 73401,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1096,
-								1096
+								86,
+								86
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 36749.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -586,11 +759,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.462033898305,
 			1.0
 		],
 		"rows":
@@ -602,7 +782,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 74.0
+		"height": 114.0
 	},
 	"replace":
 	{
