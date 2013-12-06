@@ -27,122 +27,437 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   
-  <!-- Typekit embedded fonts, goes here since it pertains to styles -->
+  <!-- Typekit embedded fonts, goes here since it pertains to styles 
   <script type="text/javascript" src="http://use.typekit.com/cki7nxo.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-
-  <!-- CSS : implied media="all" -->
-  <link rel="stylesheet" href="css/worldstyle.css?v=1">
-
-  <!-- For the less-enabled mobile browsers like Opera Mini -->
-  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
-  
-  <!-- World Styles -->
-  <link rel="stylesheet" href="css/world_style.css" />
-  <link rel="stylesheet" href="css/cloud_style.css" />
-  <link rel="stylesheet" href="css/ground_style.css" />
-  <link rel="stylesheet" href="css/bldg.css" />
-  <link rel="stylesheet" href="css/stars.css" />
+  -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="library/css/style.css" />
 
  
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/modernizr-1.5.min.js"></script>
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
+  <script src="js/modernizr-1.5.min.js"></script> -->
   
   
-  <!-- GeoIP API, dependent functions are called in the HTML -->
-  <script type="text/javascript" src="http://j.maxmind.com/app/geoip.js"></script>
+  <!-- GeoIP API, dependent functions are called in the HTML 
+  <script type="text/javascript" src="http://j.maxmind.com/app/geoip.js"></script>-->
   
 </head>
 <body>
-<div id="world" class="fall night">
-  <!-- nav>ul.nav.horizontal>li -->
+<section class="stage night sky">
+  <figure class="meta">
+    <figure class="balls">
+      <figure class="r1 row">
+        <span class="ball c1"></span>
+        <span class="ball c2"></span>
+        <span class="ball c3"></span>
+      </figure>
+      <figure class="r2 row">
+        <span class="ball c1"></span>
+        <span class="ball c2"></span>
+        <span class="ball c3"></span>
+      </figure>
+      <figure class="r3 row">
+        <span class="ball c1"></span>
+        <span class="ball c2"></span>
+        <span class="ball c3"></span>
+      </figure>
+    </figure>
+  </figure>
   
-  <!-- Panels -->
-  <section class="panels">
-    <section id="controls" class="panel controls thin">
-      <header id="controls-header" class="panel">
-        <div class="panel-controls">
-          <div class="control collapse"><a class="minmax button maximized" href="#" title="minimize">_</a></div>
-        </div>
-        <h2 id="controls-title" class="panel title">Controls</h2>
-      </header>
-      <ul id="controls-list" class="controls">
-        <li class="control pause button" title="Pause the movement of the clouds">PAUSE</li>
-        <li class="control regen button" title="Re-generate the clouds and stars">RE-GEN</li>
-        <li class="control day button" title="Let there be light!">DAY</li>
-        <li class="control night button" title="Hit the lights!">NIGHT</li>
-      </ul>
-    </section>
-    <section id="IPInfo" class="panel thin">
-      <header id="IPInfoHeader" class="panel">
-        <div class="panel-controls">
-          <div class="control collapse"><a class="minmax button maximized" href="#" title="minimize">_</a></div>
-          <div class="control close"><a class="close button" href="#" title="close">X</a></div>
-        </div>
-        <h2 class="panel title">GeoIP Info</h2>
-      </header>
-      <ul>
-        <li><script type="text/javascript">document.write(geoip_latitude());</script></li>
-        <li><script type="text/javascript">document.write(geoip_longitude());</script></li>
-      </ul>
-    </section>
-    <section id="sunrisesunset" class="panel thin">
-      <header id="sunrisesunset-header" class="panel">
-        <div class="panel-controls">
-          <div class="control collapse"><a class="minmax button maximized" href="#" title="minimize">_</a></div>
-          <div class="control close"><a class="close button" href="#" title="close">X</a></div>
-        </div>
-        <h2 id="sunrisesunset-title" class="panel title">Sunrise/Sunset</h2>
-      </header>
-      <p>coming soon...</p>
-    </section>
-    <section id="features" class="panel wide features">
-      <header class="panel" id="features-header">
-        <div class="panel-controls">
-          <div class="control collapse"><a class="minmax button maximized" href="#" title="minimize">_</a></div>
-          <div class="control close"><a class="close button" href="#" title="close">X</a></div>
-        </div>
-        <h2 class="panel title" id="features-title">Interactive Features</h2>
-      </header>
-      <ul>
-        <li>Click on the windows to make people stay late! This works in the day time, or you can call them back into work at night. Remember, you can't see the late night lights on during the day! ;)</li>
-        <li>Click the doors on the building, they open and close, you know, in case it gets a little stuffy in there.</li>
-      </ul>
-    </section>
-    <section id="comingsoon" class="panel wide comingsoon">
-      <header class="panel" id="comingsoon-header">
-        <div class="panel-controls">
-          <div class="control collapse"><a href="#" class="minmax button maximized" title="minimize">_</a></div>
-          <div class="control close"><a href="#" class="close button" title="close">X</a></div>
-        </div>
-        <h2 class="panel title" id="comingsoon-title">Features Coming Soon</h2>
-      </header>
-      <ul>
-        <li>Automatic Day/Night adjustment based on actual location and sunrise sunset times</li>
-        <li>More Buildings!! (dynamically generated..this is waiting on me figuring out the perspective algorithm.)</li>
-        <li>Improved styling. ;)</li>
-      </ul>
-    </section>
-  </section> <!-- End Panels -->
+  <div id="message"><h1>Soon.</h1></div>
+    
+  <div id='cloud1' class='cloud cloud1 container master'>  
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
   
-  <!--SKY-->
-  <div id="sky"></div>
+  <div id="cloud2" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
   
-  <!--GROUND-->
-  <div id="ground" class="grass"></div>
-  <object id="logo" data="assets/MetagrapherLogo.svg" type="image/svg+xml" height="360" width="360">  <img src="assets/MetagrapherLogo.png" height="48" width="48" alt="Metagrapher" /> </object> 
-</div>
-
+  <div id="cloud3" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud4" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud5" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud6" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud7" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud8" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud9" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud10" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud11" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud12" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud13" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud14" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud15" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud16" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud17" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud18" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud19" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id='cloud21' class='cloud cloud1 container master'>  
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  
+  <div id="cloud22" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  
+  <div id="cloud23" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud24" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud25" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud26" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud27" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud28" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud29" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+  <div id="cloud20" class='cloud container master'> 
+    <div class='cloud container minor front'> 
+      <div class='cloud contents front top'>&nbsp;</div> 
+      <div class='cloud contents front bottom'>&nbsp;</div>
+    </div> 
+    <div class='cloud container minor main'>
+      <div class='cloud contents main top'>&nbsp;</div>
+      <div class='cloud contents main mid'>&nbsp;</div>
+      <div class='cloud contents main bottom'>&nbsp;</div>
+    </div>
+    <div class='cloud contents body mid'>&nbsp;</div>
+    <div class='cloud contents body bottom'>&nbsp;</div>
+  </div>
+</section>
   <!-- Javascript at the bottom for fast page loading -->
 
-  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
 
 
   <script src="js/plugins.js?v=1"></script>
-  <script src="js/script.js?v=1"></script>
+  <script src="js/script.js?v=1"></script>-->
 
   <!--[if lt IE 7 ]>
     <script src="js/dd_belatedpng.js?v=1"></script>
@@ -154,15 +469,15 @@
   <script src="js/profiling/config.js?v=1"></script>
   <!-- end profiling code -->
 
-  <!-- My World Scripts -->
+  <!-- My World Scripts 
   <script type="text/javascript" src="js/clouds.js"></script>
   <script type="text/javascript" src="js/stars.js"></script>
   <script type="text/javascript" src="js/bldgs.js"></script>
-  <script type="text/javascript" src="js/genesis.js"></script>
+  <script type="text/javascript" src="js/genesis.js"></script>-->
   
 
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID -->
+       change the UA-XXXXX-X to be your site's ID 
   <script>
    var _gaq = [['_setAccount', 'UA-20809340-1'], ['_trackPageview']];
    (function(d, t) {
@@ -172,6 +487,6 @@
     g.src = '//www.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g, s);
    })(document, 'script');
-  </script>
+  </script>-->
  </body>
 </html>
