@@ -1,55 +1,31 @@
-<!doctype html>
-
-<!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
-
+<!DOCTYPE HTML>
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
 
   <!-- www.phpied.com/conditional-comments-block-downloads/ -->
   <!--[if IE]><![endif]-->
 
-  <?php// Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       // Remove this if you use the .htaccess ?>
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>MetaWorld</title>
+  <meta name="description" content="">
+  <meta name="author" content="Steve Calamia">
 
-  <meta name="description" content="Metagrapher's surreal gallery of Art">
-  <meta name="author" content="Metagrapher">
-
-  <?php/*  Mobile Viewport Fix
+  <!--  Mobile Viewport Fix
         j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
   device-width : Occupy full width of the screen in its current orientation
   initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width */?>
-// Google Chrome Frame for IE 
+  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+  -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 
-  <?php // mobile meta (hooray!) ?>
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
-  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-  <!--[if IE]>
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-  <![endif]-->
-  <?php // or, set /favicon.ico for IE10 win ?>
-  <meta name="msapplication-TileColor" content="#f01d4f">
-  <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-
-  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-  <?php // wordpress head functions ?>
-  <?php wp_head(); ?>
-  <?php // end of wordpress head ?>
-
-  <?php // drop Google Analytics Here ?>
-  <?php // end analytics ?>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   
   <!-- Typekit embedded fonts, goes here since it pertains to styles 
   <script type="text/javascript" src="http://use.typekit.com/cki7nxo.js"></script>

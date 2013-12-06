@@ -1,492 +1,72 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-  <meta charset="utf-8">
+<?php get_header(); ?>
 
-  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
-  <!--[if IE]><![endif]-->
+			<div id="content">
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+				<div id="inner-content" class="wrap clearfix">
 
-  <title>MetaWorld</title>
-  <meta name="description" content="">
-  <meta name="author" content="Steve Calamia">
+						<div id="main" class="eightcol first clearfix" role="main">
 
-  <!--  Mobile Viewport Fix
-        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
-  device-width : Occupy full width of the screen in its current orientation
-  initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
-  -->
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  
-  <!-- Typekit embedded fonts, goes here since it pertains to styles 
-  <script type="text/javascript" src="http://use.typekit.com/cki7nxo.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  -->
-  <!-- Styles -->
-  <link rel="stylesheet" href="library/css/style.css" />
+								<header class="article-header">
 
- 
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
-  <script src="js/modernizr-1.5.min.js"></script> -->
-  
-  
-  <!-- GeoIP API, dependent functions are called in the HTML 
-  <script type="text/javascript" src="http://j.maxmind.com/app/geoip.js"></script>-->
-  
-</head>
-<body>
-<section class="stage night sky">
-  <figure class="meta">
-    <figure class="balls">
-      <figure class="r1 row">
-        <span class="ball c1"></span>
-        <span class="ball c2"></span>
-        <span class="ball c3"></span>
-      </figure>
-      <figure class="r2 row">
-        <span class="ball c1"></span>
-        <span class="ball c2"></span>
-        <span class="ball c3"></span>
-      </figure>
-      <figure class="r3 row">
-        <span class="ball c1"></span>
-        <span class="ball c2"></span>
-        <span class="ball c3"></span>
-      </figure>
-    </figure>
-  </figure>
-  
-  <div id="message"><h1>Soon.</h1></div>
-    
-  <div id='cloud1' class='cloud cloud1 container master'>  
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  
-  <div id="cloud2" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  
-  <div id="cloud3" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud4" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud5" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud6" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud7" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud8" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud9" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud10" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud11" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud12" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud13" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud14" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud15" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud16" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud17" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud18" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud19" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id='cloud21' class='cloud cloud1 container master'>  
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  
-  <div id="cloud22" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  
-  <div id="cloud23" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud24" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud25" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud26" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud27" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud28" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud29" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-  <div id="cloud20" class='cloud container master'> 
-    <div class='cloud container minor front'> 
-      <div class='cloud contents front top'>&nbsp;</div> 
-      <div class='cloud contents front bottom'>&nbsp;</div>
-    </div> 
-    <div class='cloud container minor main'>
-      <div class='cloud contents main top'>&nbsp;</div>
-      <div class='cloud contents main mid'>&nbsp;</div>
-      <div class='cloud contents main bottom'>&nbsp;</div>
-    </div>
-    <div class='cloud contents body mid'>&nbsp;</div>
-    <div class='cloud contents body bottom'>&nbsp;</div>
-  </div>
-</section>
-  <!-- Javascript at the bottom for fast page loading -->
+									<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+									<p class="byline vcard"><?php
+										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'metagrapher' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), meta_get_the_author_posts_link(), get_the_category_list(', '));
+									?></p>
 
-  <!-- Grab Google CDN's jQuery. fall back to local if necessary 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+								</header>
 
+								<section class="entry-content clearfix">
+									<?php the_content(); ?>
+								</section>
 
-  <script src="js/plugins.js?v=1"></script>
-  <script src="js/script.js?v=1"></script>-->
+								<footer class="article-footer">
+									<p class="tags"><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'metagrapher' ) . '</span> ', ', ', '' ); ?></p>
 
-  <!--[if lt IE 7 ]>
-    <script src="js/dd_belatedpng.js?v=1"></script>
-  <![endif]-->
+								</footer>
 
+								<?php // comments_template(); // uncomment if you want to use them ?>
 
-  <!-- yui profiler and profileviewer - remove for production -->
-  <script src="js/profiling/yahoo-profiling.min.js?v=1"></script>
-  <script src="js/profiling/config.js?v=1"></script>
-  <!-- end profiling code -->
+							</article>
 
-  <!-- My World Scripts 
-  <script type="text/javascript" src="js/clouds.js"></script>
-  <script type="text/javascript" src="js/stars.js"></script>
-  <script type="text/javascript" src="js/bldgs.js"></script>
-  <script type="text/javascript" src="js/genesis.js"></script>-->
-  
+							<?php endwhile; ?>
 
-  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID 
-  <script>
-   var _gaq = [['_setAccount', 'UA-20809340-1'], ['_trackPageview']];
-   (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = '//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-   })(document, 'script');
-  </script>-->
- </body>
-</html>
+									<?php if ( function_exists( 'meta_page_navi' ) ) { ?>
+											<?php meta_page_navi(); ?>
+									<?php } else { ?>
+											<nav class="wp-prev-next">
+													<ul class="clearfix">
+														<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'metagrapher' )) ?></li>
+														<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'metagrapher' )) ?></li>
+													</ul>
+											</nav>
+									<?php } ?>
+
+							<?php else : ?>
+
+									<article id="post-not-found" class="hentry clearfix">
+											<header class="article-header">
+												<h1><?php _e( 'Oops, Post Not Found!', 'metagrapher' ); ?></h1>
+										</header>
+											<section class="entry-content">
+												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'metagrapher' ); ?></p>
+										</section>
+										<footer class="article-footer">
+												<p><?php _e( 'This is the error message in the index.php template.', 'metagrapher' ); ?></p>
+										</footer>
+									</article>
+
+							<?php endif; ?>
+
+						</div>
+
+						<?php get_sidebar(); ?>
+
+				</div>
+
+			</div>
+
+<?php get_footer(); ?>
