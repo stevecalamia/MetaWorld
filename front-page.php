@@ -32,7 +32,7 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   -->
   <!-- Styles -->
-  <link rel="stylesheet" href="library/css/style.css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/style.css" />
 
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
@@ -465,8 +465,8 @@
 
 
   <!-- yui profiler and profileviewer - remove for production -->
-  <script src="js/profiling/yahoo-profiling.min.js?v=1"></script>
-  <script src="js/profiling/config.js?v=1"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/profiling/yahoo-profiling.min.js?v=1"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/profiling/config.js?v=1"></script>
   <!-- end profiling code -->
 
   <!-- My World Scripts 
